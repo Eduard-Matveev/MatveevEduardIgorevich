@@ -1,0 +1,14 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}
+Про нас
+{% endblock %}
+
+{% block content %}
+<div class="features">
+    <h1>Про нас</h1>
+    <p>На этом сайте вы можете ознакомиться с новостях про Django! А так же добавить собственную новость, для этого нажмите на кнопку "(+) Добавить запись" в левой части интерфейса.
+    </p>
+    <a href="{% url 'news_home' %}"><li><button class="btn btn-info"><i class=""></i> На страницу новостей</button></li></a>
+</div>
+{% endblock %}
